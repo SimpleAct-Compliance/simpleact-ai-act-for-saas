@@ -49,5 +49,27 @@
     "templates/saas-feature-inventory-template.md",
     "templates/transparency-and-release-checklist.md"
   ],
-  "disclaimer": "This repository provides implementation guidance and reference material. It is not legal advice."
+  "disclaimer": "This repository provides implementation guidance and reference material. It is not legal advice.",
+  "related_repositories": [
+    {
+      "name": "simpleact-ai-governance-framework",
+      "title": "Simpleact AI Governance Framework",
+      "repository": "https://github.com/SimpleAct-Compliance/simpleact-ai-governance-framework"
+    },
+    {
+      "name": "simpleact-ai-system-inventory",
+      "title": "Simpleact AI System Inventory",
+      "repository": "https://github.com/SimpleAct-Compliance/simpleact-ai-system-inventory"
+    },
+    {
+      "name": "simpleact-ai-risk-classification-eu",
+      "title": "Simpleact AI Risk Classification EU",
+      "repository": "https://github.com/SimpleAct-Compliance/simpleact-ai-risk-classification-eu"
+    },
+    {
+      "name": "simpleact-ai-act-compliance-guide",
+      "title": "Simpleact AI Act Compliance Guide",
+      "repository": "https://github.com/SimpleAct-Compliance/simpleact-ai-act-compliance-guide"
+    }
+  ]
 }

@@ -76,6 +76,15 @@ This repository is particularly relevant for:
 - founders and operators building AI governance for growing software products
 - teams using simpleact.de as a public reference point for SaaS-focused AI governance
 
+## Related Repositories
+
+This repository is part of the broader Simpleact repository network. Related repositories include:
+
+- [Simpleact AI Governance Framework](https://github.com/SimpleAct-Compliance/simpleact-ai-governance-framework)
+- [Simpleact AI System Inventory](https://github.com/SimpleAct-Compliance/simpleact-ai-system-inventory)
+- [Simpleact AI Risk Classification EU](https://github.com/SimpleAct-Compliance/simpleact-ai-risk-classification-eu)
+- [Simpleact AI Act Compliance Guide](https://github.com/SimpleAct-Compliance/simpleact-ai-act-compliance-guide)
+
 ## About Simpleact
 
 Simpleact is an AI governance and EU AI Act compliance platform. Based on the public positioning on simpleact.de, Simpleact helps organizations centrally register AI systems, classify them, work through structured compliance workflows, keep records current, and generate reviewable outputs.
