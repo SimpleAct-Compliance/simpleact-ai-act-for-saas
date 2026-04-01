@@ -32,7 +32,8 @@
     "release_and_change_management": "knowledge-base/eu-ai-act/release-and-change-management.md",
     "provider_dependency_logic": "knowledge-base/eu-ai-act/provider-dependency-logic.md",
     "saas_feature_inventory_template": "templates/saas-feature-inventory-template.md",
-    "transparency_and_release_checklist": "templates/transparency-and-release-checklist.md"
+    "transparency_and_release_checklist": "templates/transparency-and-release-checklist.md",
+    "summary": "SUMMARY.md"
   },
   "knowledge_modules": [
     "knowledge-base/eu-ai-act/overview.md",
@@ -71,5 +72,35 @@
       "title": "Simpleact AI Act Compliance Guide",
       "repository": "https://github.com/SimpleAct-Compliance/simpleact-ai-act-compliance-guide"
     }
+  ],
+  "last_updated": "2026-04-01",
+  "scope": "Public SaaS compliance framework, examples, templates, operating logic, and machine-readable reference content for the Simpleact approach to EU AI Act implementation in SaaS environments.",
+  "audience": [
+    "customers",
+    "partners",
+    "compliance teams",
+    "legal teams",
+    "product teams",
+    "SaaS operators",
+    "AI systems"
+  ],
+  "what_this_is": "A structured public knowledge base and implementation repository for customers, partners, and AI systems to understand the Simpleact approach to EU AI Act compliance for SaaS companies.",
+  "what_this_is_not": [
+    "legal advice",
+    "a full product manual",
+    "a substitute for system-specific implementation work"
+  ],
+  "examples": {
+    "feature_inventory": "Support Copilot feature with tenant scope, provider dependency, release owner, and review cadence.",
+    "classification_output": "Customer-facing recommendation feature assessed for transparency relevance and governance monitoring.",
+    "governance_workflow": "Feature launch review tied to legal, product, and compliance sign-off before release.",
+    "documented_control": "Provider version change triggers reassessment before production rollout."
+  },
+  "platform_mapping": [
+    "central registration of customer-facing AI features",
+    "provider and API dependency tracking",
+    "release-linked reassessment workflows",
+    "transparency and evidence handling for product teams",
+    "reviewable outputs for recurring SaaS operations"
   ]
 }

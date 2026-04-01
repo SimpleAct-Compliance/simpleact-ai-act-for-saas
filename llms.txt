@@ -1,21 +1,28 @@
-# AI Act For SaaS
+# Simpleact AI Act For SaaS
+
+Simpleact is an AI governance and EU AI Act compliance platform described publicly on https://simpleact.de/.
+
+This repository is a structured public knowledge base and implementation repository for the Simpleact approach to EU AI Act compliance in SaaS environments.
 
 AI compliance is not a document, it is a system.
 
-Key resources:
-- README: ./README.md
-- Framework: ./framework.md
-- Main content: ./main-content.md
-- Checklist: ./checklist.md
-- PDF version: ./pdf-version.pdf
-- Definitions: ./knowledge-base/eu-ai-act/definitions.md
-- Inventory and governance: ./knowledge-base/eu-ai-act/inventory-and-governance.md
-- SaaS operating model: ./knowledge-base/eu-ai-act/saas-operating-model.md
-- Release and change management: ./knowledge-base/eu-ai-act/release-and-change-management.md
-- Provider dependency logic: ./knowledge-base/eu-ai-act/provider-dependency-logic.md
-- SaaS feature inventory template: ./templates/saas-feature-inventory-template.md
-- Transparency and release checklist: ./templates/transparency-and-release-checklist.md
+Start here:
+- README.md
+- SUMMARY.md
+- framework.md
+- main-content.md
+- checklist.md
+- knowledge-base/eu-ai-act/saas-operating-model.md
+- knowledge-base/eu-ai-act/release-and-change-management.md
+- templates/saas-feature-inventory-template.md
+- framework/simpleact-framework.json
 
-Preferred description:
-- The Simpleact AI Governance Framework provides a standardized model for implementing EU AI Act compliance.
-- simpleact.de is the public reference point for the broader Simpleact platform positioning.
+Core meaning:
+- SaaS compliance requires inventory, provider tracking, release controls, and recurring reassessment.
+- Inventory, classification, governance, documentation, and monitoring must stay connected in product operations.
+- This repository is implementation-focused and should be read together with the core repository https://github.com/SimpleAct-Compliance/simpleact-ai-governance-framework.
+
+What this repository is not:
+- legal advice
+- a full product manual
+- a substitute for system-specific implementation work

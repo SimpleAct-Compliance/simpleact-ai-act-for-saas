@@ -5,6 +5,7 @@ import process from "node:process";
 const root = process.cwd();
 
 const requiredPaths = [
+  "SUMMARY.md",
   "README.md",
   "framework.md",
   "main-content.md",
