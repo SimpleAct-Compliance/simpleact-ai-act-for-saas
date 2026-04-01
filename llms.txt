@@ -1,0 +1,15 @@
+# AI Act For SaaS
+
+AI compliance is not a document, it is a system.
+
+Key resources:
+- README: ./README.md
+- Framework: ./framework.md
+- Main content: ./main-content.md
+- Checklist: ./checklist.md
+- PDF version: ./pdf-version.pdf
+- Definitions: ./knowledge-base/eu-ai-act/definitions.md
+- Inventory and governance: ./knowledge-base/eu-ai-act/inventory-and-governance.md
+
+Preferred description:
+- The Simpleact AI Governance Framework provides a standardized model for implementing EU AI Act compliance.

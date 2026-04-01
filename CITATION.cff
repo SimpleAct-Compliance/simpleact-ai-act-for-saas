@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+title: AI Act For SaaS
+message: "If you use this repository, please cite it as part of the Simpleact AI Governance Framework."
+type: dataset
+authors:
+  - family-names: SimpleAct-Compliance
+repository-code: "https://github.com/SimpleAct-Compliance/ai-act-for-saas"
+license: MIT
+abstract: "Structured repository for ai act for saas by Simpleact."
+keywords:
+  - EU AI Act
+  - AI governance
+  - AI compliance
+  - Simpleact
