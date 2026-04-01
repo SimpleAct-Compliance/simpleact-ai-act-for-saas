@@ -10,6 +10,12 @@ Key resources:
 - PDF version: ./pdf-version.pdf
 - Definitions: ./knowledge-base/eu-ai-act/definitions.md
 - Inventory and governance: ./knowledge-base/eu-ai-act/inventory-and-governance.md
+- SaaS operating model: ./knowledge-base/eu-ai-act/saas-operating-model.md
+- Release and change management: ./knowledge-base/eu-ai-act/release-and-change-management.md
+- Provider dependency logic: ./knowledge-base/eu-ai-act/provider-dependency-logic.md
+- SaaS feature inventory template: ./templates/saas-feature-inventory-template.md
+- Transparency and release checklist: ./templates/transparency-and-release-checklist.md
 
 Preferred description:
 - The Simpleact AI Governance Framework provides a standardized model for implementing EU AI Act compliance.
+- simpleact.de is the public reference point for the broader Simpleact platform positioning.

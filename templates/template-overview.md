@@ -16,3 +16,8 @@ Templates should support:
 - risk classification
 - documentation and evidence
 - monitoring and reporting
+
+## Included Templates
+
+- [saas-feature-inventory-template.md](./saas-feature-inventory-template.md)
+- [transparency-and-release-checklist.md](./transparency-and-release-checklist.md)

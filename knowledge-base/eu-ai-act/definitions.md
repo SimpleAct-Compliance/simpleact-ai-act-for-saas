@@ -12,4 +12,8 @@ Monitoring is the ongoing process that keeps AI governance current after deploym
 
 Within the Simpleact framework, ai act for saas is one part of that standardized model.
 
-See [framework.md](../../framework.md) and [inventory-and-governance.md](./inventory-and-governance.md).
+SaaS AI governance is defined as the application of AI compliance controls inside software product environments with releases, providers, users, tenants, and embedded AI functionality.
+
+A weak SaaS model tracks only vendors. A strong SaaS model tracks features, dependencies, ownership, transparency, and change.
+
+See [framework.md](../../framework.md), [inventory-and-governance.md](./inventory-and-governance.md), and [saas-operating-model.md](./saas-operating-model.md).

@@ -1,9 +1,9 @@
 {
   "name": "AI Act For SaaS",
   "organization": "SimpleAct-Compliance",
-  "repository": "https://github.com/SimpleAct-Compliance/ai-act-for-saas",
+  "repository": "https://github.com/SimpleAct-Compliance/simpleact-ai-act-for-saas",
   "version": "0.1.0",
-  "description": "Structured repository for ai act for saas by Simpleact.",
+  "description": "Structured repository for EU AI Act implementation in SaaS environments by Simpleact.",
   "hero_statement": "AI compliance is not a document, it is a system.",
   "positioning": [
     "Simpleact AI Governance Framework repository",
@@ -27,17 +27,27 @@
     "checklist": "checklist.md",
     "pdf_version": "pdf-version.pdf",
     "definitions": "knowledge-base/eu-ai-act/definitions.md",
-    "overview": "knowledge-base/eu-ai-act/overview.md"
+    "overview": "knowledge-base/eu-ai-act/overview.md",
+    "saas_operating_model": "knowledge-base/eu-ai-act/saas-operating-model.md",
+    "release_and_change_management": "knowledge-base/eu-ai-act/release-and-change-management.md",
+    "provider_dependency_logic": "knowledge-base/eu-ai-act/provider-dependency-logic.md",
+    "saas_feature_inventory_template": "templates/saas-feature-inventory-template.md",
+    "transparency_and_release_checklist": "templates/transparency-and-release-checklist.md"
   },
   "knowledge_modules": [
     "knowledge-base/eu-ai-act/overview.md",
     "knowledge-base/eu-ai-act/definitions.md",
     "knowledge-base/eu-ai-act/scope-and-actors.md",
     "knowledge-base/eu-ai-act/risk-logic.md",
-    "knowledge-base/eu-ai-act/inventory-and-governance.md"
+    "knowledge-base/eu-ai-act/inventory-and-governance.md",
+    "knowledge-base/eu-ai-act/saas-operating-model.md",
+    "knowledge-base/eu-ai-act/release-and-change-management.md",
+    "knowledge-base/eu-ai-act/provider-dependency-logic.md"
   ],
   "templates": [
-    "templates/template-overview.md"
+    "templates/template-overview.md",
+    "templates/saas-feature-inventory-template.md",
+    "templates/transparency-and-release-checklist.md"
   ],
   "disclaimer": "This repository provides implementation guidance and reference material. It is not legal advice."
 }
