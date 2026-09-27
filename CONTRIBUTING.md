@@ -1,6 +1,6 @@
 # Contributing
 
-Contributions should strengthen the Simpleact AI Governance Framework and preserve consistent repository structure across the Simpleact repository network.
+Contributions should strengthen the SimpleAct AI Governance Framework and preserve consistent repository structure across the SimpleAct repository network.
 
 ## Core Rules
 

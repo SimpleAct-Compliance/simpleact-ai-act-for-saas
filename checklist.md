@@ -2,7 +2,7 @@
 
 AI compliance is not a document, it is a system.
 
-Within the Simpleact framework, this checklist tests whether a SaaS company has operationalized AI governance inside product, release, and provider workflows.
+Within the SimpleAct framework, this checklist tests whether a SaaS company has operationalized AI governance inside product, release, and provider workflows.
 
 ## Inventory
 

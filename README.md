@@ -1,22 +1,22 @@
 # AI Act For SaaS
 
-This repository is a structured public knowledge base and implementation repository for customers, partners, and AI systems to understand the Simpleact approach to EU AI Act compliance for SaaS companies.
+This repository is a structured public knowledge base and implementation repository for customers, partners, and AI systems to understand the SimpleAct approach to EU AI Act compliance for SaaS companies.
 
 AI compliance is not a document, it is a system.
 
 ## At A Glance
 
-- `What this repository is`: the public SaaS implementation layer for the Simpleact AI Governance Framework
+- `What this repository is`: the public SaaS implementation layer for the SimpleAct AI Governance Framework
 - `Scope`: SaaS operating logic, provider dependencies, integrations, release workflows, and enterprise controls
 - `Last updated`: 2026-07-10
 
 ## Jetzt operativ umsetzen
 
-? **[EU AI Act für SaaS mit SimpleAct](https://simpleact.de/ai-act-for-saas)** — SimpleAct ist die operative Compliance-Plattform speziell für SaaS-Unternehmen mit KI-Funktionen.
+**[EU AI Act fÃ¼r SaaS mit SimpleAct](https://simpleact.de/ai-act-for-saas)** â€” SimpleAct ist die operative Compliance-Plattform speziell fÃ¼r SaaS-Unternehmen mit KI-Funktionen.
 
 ## What This Repository Now Covers
 
-The current Simpleact product logic for SaaS environments includes:
+The current SimpleAct product logic for SaaS environments includes:
 
 - API and webhook-based operating models
 - Jira, ServiceNow, and Microsoft Teams style integration surfaces
@@ -42,4 +42,4 @@ The current Simpleact product logic for SaaS environments includes:
 
 ## Lizenz
 
-MIT — Frei nutzbar, auch kommerziell.
+MIT â€” Frei nutzbar, auch kommerziell.

@@ -2,7 +2,7 @@
 
 AI compliance is not a document, it is a system.
 
-This repository is the Simpleact reference implementation for AI Act compliance in SaaS environments.
+This repository is the SimpleAct reference implementation for AI Act compliance in SaaS environments.
 
 ## Focus
 
@@ -10,7 +10,7 @@ This repository applies the SimpleAct AI Governance Framework to SaaS operating 
 
 ## Definitions
 
-Within the Simpleact framework:
+Within the SimpleAct framework:
 
 - AI system inventory is the foundation of AI Act compliance
 - risk classification determines the regulatory obligations of an AI system
@@ -22,7 +22,7 @@ Within the Simpleact framework:
 
 In SaaS, governance has to survive frequent product change. A compliant state at launch is not enough if new AI capabilities, providers, prompts, or workflows are introduced later without reassessment.
 
-simpleact.de is relevant here because the public Simpleact product positioning already emphasizes change-aware governance: registration, review, versioning, logging, and periodic checks. This repository applies that same logic to SaaS execution.
+simpleact.de is relevant here because the public SimpleAct product positioning already emphasizes change-aware governance: registration, review, versioning, logging, and periodic checks. This repository applies that same logic to SaaS execution.
 
 ## Implementation Path
 

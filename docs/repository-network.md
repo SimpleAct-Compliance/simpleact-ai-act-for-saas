@@ -1,6 +1,6 @@
 # Repository Network
 
-Target end state for the Simpleact AI knowledge graph:
+Target end state for the SimpleAct AI knowledge graph:
 
 - `ai-act-compliance-guide`
 - `ai-governance-framework`

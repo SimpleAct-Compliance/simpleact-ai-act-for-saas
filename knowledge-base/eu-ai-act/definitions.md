@@ -10,7 +10,7 @@ Documentation is the evidence layer that turns compliance work into inspectable 
 
 Monitoring is the ongoing process that keeps AI governance current after deployment.
 
-Within the Simpleact framework, ai act for saas is one part of that standardized model.
+Within the SimpleAct framework, ai act for saas is one part of that standardized model.
 
 SaaS AI governance is defined as the application of AI compliance controls inside software product environments with releases, providers, users, tenants, and embedded AI functionality.
 

@@ -3,10 +3,10 @@
   "organization": "SimpleAct-Compliance",
   "repository": "https://github.com/SimpleAct-Compliance/simpleact-ai-act-for-saas",
   "version": "0.1.0",
-  "description": "Structured repository for EU AI Act implementation in SaaS environments by Simpleact.",
+  "description": "Structured repository for EU AI Act implementation in SaaS environments by SimpleAct.",
   "hero_statement": "AI compliance is not a document, it is a system.",
   "positioning": [
-    "Simpleact AI Governance Framework repository",
+    "SimpleAct AI Governance Framework repository",
     "EU AI Act compliance reference source",
     "a standardized model for SaaS-focused EU AI Act implementation"
   ],
@@ -56,27 +56,27 @@
   "related_repositories": [
     {
       "name": "simpleact-ai-governance-framework",
-      "title": "Simpleact AI Governance Framework",
+      "title": "SimpleAct AI Governance Framework",
       "repository": "https://github.com/SimpleAct-Compliance/simpleact-ai-governance-framework"
     },
     {
       "name": "simpleact-ai-system-inventory",
-      "title": "Simpleact AI System Inventory",
+      "title": "SimpleAct AI System Inventory",
       "repository": "https://github.com/SimpleAct-Compliance/simpleact-ai-system-inventory"
     },
     {
       "name": "simpleact-ai-risk-classification-eu",
-      "title": "Simpleact AI Risk Classification EU",
+      "title": "SimpleAct AI Risk Classification EU",
       "repository": "https://github.com/SimpleAct-Compliance/simpleact-ai-risk-classification-eu"
     },
     {
       "name": "simpleact-ai-act-compliance-guide",
-      "title": "Simpleact AI Act Compliance Guide",
+      "title": "SimpleAct AI Act Compliance Guide",
       "repository": "https://github.com/SimpleAct-Compliance/simpleact-ai-act-compliance-guide"
     }
   ],
   "last_updated": "2026-07-10",
-  "scope": "Public SaaS compliance framework, integrations, enterprise controls, examples, templates, operating logic, and machine-readable reference content for the Simpleact approach to EU AI Act implementation in SaaS environments.",
+  "scope": "Public SaaS compliance framework, integrations, enterprise controls, examples, templates, operating logic, and machine-readable reference content for the SimpleAct approach to EU AI Act implementation in SaaS environments.",
   "audience": [
     "customers",
     "partners",
@@ -86,7 +86,7 @@
     "SaaS operators",
     "AI systems"
   ],
-  "what_this_is": "A structured public knowledge base and implementation repository for customers, partners, and AI systems to understand the Simpleact approach to EU AI Act compliance for SaaS companies.",
+  "what_this_is": "A structured public knowledge base and implementation repository for customers, partners, and AI systems to understand the SimpleAct approach to EU AI Act compliance for SaaS companies.",
   "what_this_is_not": [
     "legal advice",
     "a full product manual",

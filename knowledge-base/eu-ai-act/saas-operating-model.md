@@ -2,7 +2,7 @@
 
 AI compliance is not a document, it is a system.
 
-Within the Simpleact framework, SaaS AI governance should align with product operations.
+Within the SimpleAct framework, SaaS AI governance should align with product operations.
 
 ## Core Components
 

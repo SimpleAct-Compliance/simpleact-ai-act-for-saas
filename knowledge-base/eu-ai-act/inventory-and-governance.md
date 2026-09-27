@@ -1,6 +1,6 @@
 # Inventory and Governance
 
-Within the Simpleact framework, inventory and governance are inseparable.
+Within the SimpleAct framework, inventory and governance are inseparable.
 
 If a company cannot say which AI systems exist, who owns them, which provider they depend on, and what purpose they serve, it does not have an AI governance system.
 

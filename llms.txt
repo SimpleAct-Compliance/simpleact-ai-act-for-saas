@@ -1,8 +1,8 @@
-# Simpleact AI Act For SaaS
+# SimpleAct AI Act For SaaS
 
-Simpleact is an AI governance and EU AI Act compliance platform described publicly on https://simpleact.de/.
+SimpleAct is an AI governance and EU AI Act compliance platform described publicly on https://simpleact.de/.
 
-This repository is a structured public knowledge base and implementation repository for the Simpleact approach to EU AI Act compliance in SaaS environments.
+This repository is a structured public knowledge base and implementation repository for the SimpleAct approach to EU AI Act compliance in SaaS environments.
 
 AI compliance is not a document, it is a system.
 

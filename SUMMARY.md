@@ -1,12 +1,12 @@
-# Simpleact SaaS Summary
+# SimpleAct SaaS Summary
 
-## What Is Simpleact
+## What Is SimpleAct
 
-Simpleact is an AI governance and EU AI Act compliance platform described publicly on `simpleact.de`.
+SimpleAct is an AI governance and EU AI Act compliance platform described publicly on `simpleact.de`.
 
 ## What This Repository Is
 
-This repository is the public SaaS implementation layer for the Simpleact approach.
+This repository is the public SaaS implementation layer for the SimpleAct approach.
 
 ## Who It Is For
 
@@ -27,7 +27,7 @@ This repository is the public SaaS implementation layer for the Simpleact approa
 
 ## Implementation Logic
 
-The Simpleact SaaS model works in sequence:
+The SimpleAct SaaS model works in sequence:
 
 1. register customer-facing AI features
 2. capture provider and deployment dependencies

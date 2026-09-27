@@ -1,6 +1,6 @@
 # Template Overview
 
-This repository uses templates as part of the Simpleact AI Governance Framework.
+This repository uses templates as part of the SimpleAct AI Governance Framework.
 
 ## Repository Topic
 

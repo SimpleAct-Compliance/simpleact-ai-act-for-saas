@@ -1,6 +1,6 @@
 # Risk Logic
 
-Within the Simpleact framework, risk logic must be explicit and repeatable.
+Within the SimpleAct framework, risk logic must be explicit and repeatable.
 
 The model distinguishes:
 

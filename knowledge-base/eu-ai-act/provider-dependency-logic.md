@@ -1,6 +1,6 @@
 # Provider Dependency Logic
 
-Within the Simpleact framework, provider visibility is critical for SaaS AI governance.
+Within the SimpleAct framework, provider visibility is critical for SaaS AI governance.
 
 Teams should document:
 

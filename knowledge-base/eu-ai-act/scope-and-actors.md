@@ -1,6 +1,6 @@
 # Scope and Actors
 
-Within the Simpleact framework, scope and actor analysis comes before detailed compliance work.
+Within the SimpleAct framework, scope and actor analysis comes before detailed compliance work.
 
 Organizations should document:
 

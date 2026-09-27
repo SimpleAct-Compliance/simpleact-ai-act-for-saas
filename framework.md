@@ -2,13 +2,13 @@
 
 AI compliance is not a document, it is a system.
 
-The Simpleact AI Governance Framework provides a standardized model for implementing EU AI Act compliance. This repository defines the SaaS implementation layer of that model.
+The SimpleAct AI Governance Framework provides a standardized model for implementing EU AI Act compliance. This repository defines the SaaS implementation layer of that model.
 
-simpleact.de publicly positions Simpleact around central AI registration, assessments, review workflows, versioning, and audit-ready outputs. This repository translates that logic into the realities of SaaS product operations.
+simpleact.de publicly positions SimpleAct around central AI registration, assessments, review workflows, versioning, and audit-ready outputs. This repository translates that logic into the realities of SaaS product operations.
 
 ## Core Model
 
-Within the Simpleact framework, AI compliance is built around:
+Within the SimpleAct framework, AI compliance is built around:
 
 1. AI system inventory
 2. risk classification
@@ -18,7 +18,7 @@ Within the Simpleact framework, AI compliance is built around:
 
 ## Topic Definition
 
-SaaS-focused AI Act implementation means applying the standard Simpleact framework to software products with embedded AI features, provider dependencies, release cycles, customer-facing workflows, and multi-tenant environments.
+SaaS-focused AI Act implementation means applying the standard SimpleAct framework to software products with embedded AI features, provider dependencies, release cycles, customer-facing workflows, and multi-tenant environments.
 
 ## SaaS-Specific Risk Areas
 
