@@ -1,47 +1,69 @@
-# AI Act For SaaS
+# Das Verfahren in Kurzform
 
-AI compliance is not a document, it is a system.
+Drei Fragen, die für Softwareanbieter alles bestimmen:
 
-The SimpleAct AI Governance Framework provides a standardized model for implementing EU AI Act compliance. This repository defines the SaaS implementation layer of that model.
+1. **Sind wir Anbieter?** Steht unser Name auf der Funktion, und rufen Kunden uns bei Fehlern an — dann ja.
+2. **Welche Angaben haben wir nicht?** Alles, was nur der Modellanbieter weiß.
+3. **Wo greifen wir ein?** Am Release. Dort und nur dort.
 
-simpleact.de publicly positions SimpleAct around central AI registration, assessments, review workflows, versioning, and audit-ready outputs. This repository translates that logic into the realities of SaaS product operations.
+## Die Rollenkette
 
-## Core Model
+```
+  Modellanbieter  ->  Sie  ->  Ihr Kunde  ->  dessen Kunden
+     Anbieter      Anbieter    Betreiber
+     des Modells   des Systems  (bis Art. 25 greift)
+```
 
-Within the SimpleAct framework, AI compliance is built around:
+Sie sind gleichzeitig **Betreiber** eines fremden Modells und **Anbieter** Ihres Systems. Beide Kataloge gelten, für verschiedene Gegenstände.
 
-1. AI system inventory
-2. risk classification
-3. governance and accountability
-4. documentation and evidence
-5. monitoring and reporting
+## Die drei Angaben, die Sie nicht haben
 
-## Topic Definition
+| Angabe | Folge, wenn sie fehlt |
+|---|---|
+| Trainingsdatenherkunft | Anhang IV Abschnitt 2 unvollständig |
+| Entwurfsentscheidungen des Modells | Anhang IV Abschnitt 2 unvollständig |
+| **Modellversion und ihre Änderungen** | **alle Nachweise zeitlich unzuordenbar** |
 
-SaaS-focused AI Act implementation means applying the standard SimpleAct framework to software products with embedded AI features, provider dependencies, release cycles, customer-facing workflows, and multi-tenant environments.
+Was zu tun ist: die Fragen vor den Vertrag stellen, und die Lücke mit Datum der Anfrage dokumentieren. Eine dokumentierte Anbieterlücke ist ein Befund gegen ihn — dieselbe Lücke ohne Dokumentation ist ein Befund gegen Sie.
 
-## SaaS-Specific Risk Areas
+## Der Releasepunkt: fünf Fragen
 
-Within SaaS environments, governance work should pay special attention to:
+- Ändert sich das Verhalten einer KI-Funktion?
+- Ist die Änderung **wesentlich** nach Art. 3 Nr. 23?
+- Ändert sich die **Zweckbestimmung**?
+- Werden **Nachweise** mit Versionsbezug ungültig?
+- Müssen **Kunden** informiert werden?
 
-- embedded AI product features
-- customer-facing assistance and automation
-- external model or API providers
-- release-based changes in AI behavior
-- tenant-level transparency and support implications
+Diese fünf in die Freigabevorlage einzubauen ist die wirksamste Einzelmaßnahme — wirksamer als jede Richtlinie, weil sie dort greift, wo entschieden wird.
 
-## SaaS Control Outputs
+**Der Hebel bei Frage 2:** Wesentlich ist eine Änderung, die der Anbieter **nicht vorab bewertet** hat. Wer absehbare Änderungen im Vorhinein beschreibt, hat sie später nicht als wesentlich zu behandeln.
 
-The SaaS layer should produce:
+## Was heute gilt
 
-- a feature-level AI inventory
-- named product and compliance owners
-- provider and dependency visibility
-- release-triggered reassessment logic
-- transparency and documentation checkpoints
+| Pflicht | Seit | Für SaaS |
+|---|---|---|
+| Art. 5 verbotene Praktiken | 2.2.2025 | Emotionserkennung in Gesprächsanalysen |
+| Art. 4 KI-Kompetenz | 2.2.2025 | eigene Beschäftigte |
+| **Art. 50 Transparenz** | **2.8.2026** | **jede Chatfunktion, jeder erzeugte Text** |
+| Anhang III Hochrisiko | 2.12.2027 | Vorarbeit |
 
-## Why It Matters
+Art. 50 ist für ein Produkt mit KI-Funktionen die dringende Zeile — und die, die bei Releases am häufigsten unbemerkt gebrochen wird. Der Prüfpunkt lautet: **in jeder Ansicht, vor der ersten Eingabe, mit Nachweis samt Produktversion.**
 
-This repository applies the SimpleAct AI Governance Framework to SaaS operating environments. Without a SaaS-specific layer, teams often understand the framework conceptually but fail to integrate it into release, product, and provider workflows.
+## Die zwei Zahlen, die Ihr Produkt liefern sollte
 
-See [knowledge-base/eu-ai-act/definitions.md](./knowledge-base/eu-ai-act/definitions.md), [knowledge-base/eu-ai-act/saas-operating-model.md](./knowledge-base/eu-ai-act/saas-operating-model.md), [main-content.md](./main-content.md), and [checklist.md](./checklist.md).
+| Kennzahl | Wofür |
+|---|---|
+| geänderte oder verworfene Ausgaben je Mandant | Ihr Kunde braucht sie für seinen Art.-14-Nachweis |
+| Modellversion je Zeitraum und Mandant | zeitliche Zuordnung aller Nachweise, auch Ihrer |
+
+Beides ist technisch klein und als Produktmerkmal wertvoll.
+
+## Was Kunden fragen werden
+
+Vier Fragen, in jeder Beschaffungsprüfung: Welche Funktionen nutzen KI? Welches Modell, von wem, in welcher Version? Werden unsere Daten zum Training verwendet, und wo steht das? Wie erfahren wir von Modelländerungen?
+
+Eine Seite mit belegbaren Antworten erspart die zwanzigfache Einzelbeantwortung. Das ist der wirtschaftlichste Teil der ganzen Compliance-Arbeit.
+
+## Weiter
+
+[Wer hier Anbieter ist](./knowledge-base/eu-ai-act/scope-and-actors.md) · [Prüfliste](./checklist.md) · [Vorlagen](./templates/template-overview.md)

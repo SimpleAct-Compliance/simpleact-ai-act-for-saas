@@ -1,43 +1,110 @@
-# Checklist
+# Prüfliste für Softwareanbieter
 
-AI compliance is not a document, it is a system.
+Ein Nein ist ein Befund. Es gehört mit Person und Termin in die Tabelle am Ende.
 
-Within the SimpleAct framework, this checklist tests whether a SaaS company has operationalized AI governance inside product, release, and provider workflows.
+## Rolle
 
-## Inventory
+- [ ] Je KI-Funktion ist die **Rolle** bestimmt: Anbieter oder Betreiber, mit Begründung
+- [ ] Geprüft: Steht unser Name auf der Funktion, nicht der des Modellanbieters?
+- [ ] Geprüft: Wen rufen Kunden bei Fehlern an?
+- [ ] Die Rolle des **Modellanbieters** ist bestimmt: GPAI-Anbieter, Auftragsverarbeiter, Empfänger
+- [ ] Für intern eingesetzte KI ist **Art. 25** geprüft, mit Datum
+- [ ] Bekannt ist, welche **Kundennutzungen** einen Anhang-III-Bereich berühren
 
-- AI systems, tools, and providers are listed
-- owners and purposes are defined
-- deployment context is documented
-- customer-facing AI features are tracked at feature level
-- model and API dependencies are visible
+## Funktionsregister
 
-## Classification
+- [ ] Ein Eintrag **je KI-Funktion**, nicht je Produkt
+- [ ] Register aus mehr als einer Quelle gefüllt: Backlog, Abhängigkeitsliste, ausgehende Netzaufrufe, **Rechnungen der Modellanbieter**
+- [ ] Interne KI-Nutzung in einem **getrennten** Register geführt
+- [ ] Je Funktion ein **Funktionseigentümer** im Produktbereich
+- [ ] Prüfer ist nicht der Eigentümer
+- [ ] Abgeschaltete Funktionen behalten ihren Eintrag
 
-- prohibited practice screening exists
-- high-risk relevance is assessed
-- assumptions and reasoning are recorded
-- classification is revisited when features or providers change
+Die Rechnungen der Modellanbieter finden den typischen Fall: Ein Experiment ist in Produktion gegangen, und es gibt keinen Eintrag.
 
-## Governance
+## Einstufung je Funktion
 
-- roles and approvals are assigned
-- review cadence exists
-- human oversight is defined
-- release or rollout changes can trigger governance review
+- [ ] Die **Zweckbestimmung** ist eng gefasst und benennt, wofür die Funktion nicht eingesetzt werden darf
+- [ ] **Art. 5** je Praktik geprüft, besonders **Emotionserkennung am Arbeitsplatz oder in Bildungseinrichtungen**
+- [ ] Unterschieden: Analyse von **Kundentexten** gegen Bewertung von **Beschäftigten**
+- [ ] **Anhang III** geprüft, alle acht Bereiche
+- [ ] Bei Treffer: Art. 6 Abs. 3 **dokumentiert bewertet**
+- [ ] Geprüft, ob **profiliert** wird
+- [ ] **Übernahmequote** gemessen, nicht geschätzt
+- [ ] Rechtliche Klasse und interne Risikoeinschätzung getrennt
 
-## Documentation
+## Art. 50 Transparenz
 
-- evidence-ready records exist
-- templates are used consistently
-- exports can support audits or internal review
-- transparency and user-facing behavior are documented
+- [ ] Je Funktion geprüft, ob eine Transparenzpflicht greift
+- [ ] Hinweis **vor der ersten Eingabe** sichtbar
+- [ ] Hinweis in **jeder Ansicht**: Desktop, Mobil, eingebettet, Benachrichtigungen
+- [ ] Erzeugte Inhalte **maschinenlesbar** gekennzeichnet
+- [ ] Nachweis je Funktion mit **Datum und Produktversion**
+- [ ] Die Prüfung ist Teil der **Releasefreigabe**, nicht eine Jahresaufgabe
 
-## Monitoring and Reporting
+## Modellabhängigkeit
 
-- incidents and changes are tracked
-- reassessment triggers are defined
-- reporting outputs can be generated
-- support signals, release changes, and provider updates flow into monitoring
+- [ ] Je Funktion: **Modell und Version** eingetragen
+- [ ] Die Version ist in der Antwort ablesbar — oder vermerkt, dass der Anbieter sie nicht liefert
+- [ ] Die Version wird **protokolliert**
+- [ ] Ein **Testsatz** läuft automatisch, mindestens monatlich
+- [ ] Testsatz deckt **Grenzfälle** ab, nicht die einfachen Fälle
+- [ ] Abweichungen werden protokolliert und gehen als Meldung an eine benannte Person
+- [ ] Bekannt ist, wie der Anbieter Modellwechsel **ankündigt** und mit welcher Vorlaufzeit
+- [ ] Geprüft, ob **frühere Modellversionen** für eine Übergangszeit verfügbar sind
+- [ ] Nicht gelieferte Anbieterangaben sind dokumentiert, **mit Datum der Anfrage**
 
-See [framework.md](./framework.md), [knowledge-base/eu-ai-act/release-and-change-management.md](./knowledge-base/eu-ai-act/release-and-change-management.md), [knowledge-base/eu-ai-act/provider-dependency-logic.md](./knowledge-base/eu-ai-act/provider-dependency-logic.md), and [templates/transparency-and-release-checklist.md](./templates/transparency-and-release-checklist.md).
+## Release
+
+- [ ] Die **fünf Freigabefragen** sind Teil der bestehenden Freigabevorlage
+- [ ] Absehbare Änderungen sind **vorab in der Dokumentation bewertet**, damit sie nicht wesentlich werden
+- [ ] Der **Änderungsverlauf** führt auch Modellwechsel beim Zulieferer, ohne eigenes Release
+- [ ] Der Änderungsverlauf führt mandantenspezifische Konfigurationsänderungen
+- [ ] Ungültig gewordene Nachweise werden **zurück auf offen** gesetzt
+- [ ] Entschieden und festgehalten, wann Kunden informiert werden
+
+## Mehrmandanz
+
+- [ ] Festgehalten, ob Mandanten eine **Modellinstanz teilen**
+- [ ] Festgehalten, welche **Konfiguration** Mandanten möglich ist
+- [ ] Bei freier Konfiguration: die Grenzen sind **technisch erzwungen**, nicht nur vertraglich
+- [ ] Festgehalten, ob Daten eines Mandanten in Ausgaben für andere fließen können
+- [ ] Beschrieben, wie die Trennung technisch erzwungen wird
+- [ ] Bei mandantenspezifischer **Feinabstimmung**: je Mandant eigene Validierung und eigener Änderungsverlauf
+
+## Was Kunden brauchen
+
+- [ ] Eine Seite beantwortet die **vier Beschaffungsfragen** mit Fundstellen und Prüfdatum
+- [ ] Die **Betriebsanleitung** sagt, woran eine falsche Ausgabe erkennbar ist
+- [ ] Die Betriebsanleitung benennt, **wofür das Produkt nicht eingesetzt werden darf**, mit Hinweis auf Art. 25
+- [ ] Das Produkt weist **geänderte Ausgaben je Mandant** aus
+- [ ] Das Produkt weist die **Modellversion je Zeitraum** aus
+- [ ] Protokollexport ist möglich, filterbar nach Zeitraum
+- [ ] Der Modellanbieter steht in der **Unterauftragsverarbeiterliste**
+- [ ] Die Meldeklausel sagt **unverzüglich**, nicht eine Frist in Werktagen
+
+Die letzte Zeile: Ihr Kunde kann seine 72 Stunden nach Art. 33 DSGVO nur halten, wenn Sie unverzüglich melden.
+
+## Was nicht zugesagt wird
+
+- [ ] Nirgends steht, das Produkt sei „AI-Act-konform"
+- [ ] Nirgends wird Fehlerfreiheit der Ausgaben zugesagt
+- [ ] Nirgends wird suggeriert, der Kunde habe keine eigenen Pflichten
+
+## Eigene Beschäftigte
+
+- [ ] **Art. 4** erfüllt: wer KI-Funktionen entwickelt, betreut oder im Support erklärt, ist dafür geschult
+- [ ] Die Schulung ist **produktbezogen**: wie dieses Modell irrt
+- [ ] Der Support weiß, wann eine Kundenmeldung ein **Vorfall** nach Art. 73 sein könnte
+
+---
+
+## Befunde
+
+| Befund | Verantwortlich (Person) | Termin |
+|---|---|---|
+| | | |
+
+## Weiter
+
+[Das Betriebsmodell](./knowledge-base/eu-ai-act/saas-operating-model.md) · [Vorlagen](./templates/template-overview.md) · [Dokumentationsvorlage](https://github.com/SimpleAct-Compliance/simpleact-ai-act-documentation-template)

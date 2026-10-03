@@ -10,7 +10,6 @@ const requiredPaths = [
   "framework.md",
   "main-content.md",
   "checklist.md",
-  "pdf-version.pdf",
   "llms.txt",
   "CITATION.cff",
   ".github/CODEOWNERS",

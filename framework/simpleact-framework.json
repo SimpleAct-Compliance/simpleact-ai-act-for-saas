@@ -1,108 +1,127 @@
 {
-  "name": "AI Act For SaaS",
+  "name": "EU AI Act für SaaS",
+  "name_en": "EU AI Act for SaaS",
   "organization": "SimpleAct-Compliance",
+  "publisher": "SimpleAct UG (haftungsbeschränkt), Recklinghausen, Deutschland",
   "repository": "https://github.com/SimpleAct-Compliance/simpleact-ai-act-for-saas",
-  "version": "0.1.0",
-  "description": "Structured repository for EU AI Act implementation in SaaS environments by SimpleAct.",
-  "hero_statement": "AI compliance is not a document, it is a system.",
-  "positioning": [
-    "SimpleAct AI Governance Framework repository",
-    "EU AI Act compliance reference source",
-    "a standardized model for SaaS-focused EU AI Act implementation"
+  "website": "https://simpleact.de",
+  "version": "1.0.0",
+  "language": "de",
+  "last_updated": "2026-10-03",
+  "role_in_network": "Lage statt Schritt: greift quer in Inventar, Einstufung, Prüfung, Dokumentation und Betrieb ein",
+  "legal_basis": [
+    "Verordnung (EU) 2024/1689, insbesondere Art. 3, 13, 14, 25, 26, 50, 72, 73",
+    "Verordnung (EU) 2026/1744 (Digital Omnibus, in Kraft seit 2026-07-27)",
+    "Verordnung (EU) 2016/679 (DSGVO), insbesondere Art. 28, 32, 33, 44 ff."
   ],
-  "repository_pattern": {
-    "type": "standard-simpleact-topic-repo",
-    "required_top_level_files": [
-      "README.md",
-      "framework.md",
-      "main-content.md",
-      "checklist.md",
-      "pdf-version.pdf"
-    ]
+  "core_principle": "Wer eine KI-Funktion in ein Produkt einbaut, das Kunden benutzen, ist Anbieter — auch wenn das Modell darunter von jemand anderem kommt.",
+  "provider_test": "Wen ruft ein Kunde an, wenn die Funktion falsche Ergebnisse liefert?",
+  "unit_of_assessment": "Funktion im Produkt, nicht Produkt",
+  "role_chain": [
+    {"party": "Modellanbieter", "role": "Anbieter des Modells, zugleich GPAI-Anbieter"},
+    {"party": "SaaS-Anbieter", "role": "Betreiber des Modells und Anbieter des Systems"},
+    {"party": "Kunde", "role": "Betreiber — bis Art. 25 greift"},
+    {"party": "Endkunde des Kunden", "role": "betroffene Person"}
+  ],
+  "records_you_owe_but_cannot_produce": [
+    {"record": "Trainingsdatenherkunft", "needed_for": "Anhang IV Abschnitt 2"},
+    {"record": "Entwurfsentscheidungen des Modells", "needed_for": "Anhang IV Abschnitt 2"},
+    {"record": "Modellversion und Änderungsverlauf", "needed_for": "Anhang IV Abschnitt 5 und die zeitliche Zuordnung aller Nachweise"}
+  ],
+  "release_gate_questions": [
+    "Ändert sich das Verhalten einer KI-Funktion?",
+    "Ist die Änderung wesentlich nach Art. 3 Nr. 23, also nicht vorab bewertet?",
+    "Ändert sich die Zweckbestimmung?",
+    "Werden Nachweise mit Versionsbezug ungültig?",
+    "Müssen Kunden informiert werden?"
+  ],
+  "materiality_lever": "Wesentlich ist nur, was der Anbieter nicht vorab in der technischen Dokumentation bewertet hat. Wer absehbare Änderungen im Vorhinein beschreibt, hat sie später nicht als wesentlich zu behandeln.",
+  "silent_model_change": {
+    "problem": "Schnittstelle bleibt identisch, Verhalten nicht; bei SaaS sind auch die Nachweise der Kunden betroffen",
+    "detection": [
+      {"method": "Versionsangabe in der Antwort", "needs_provider": true},
+      {"method": "Änderungsverlauf abonnieren", "needs_provider": true},
+      {"method": "fester Testsatz", "needs_provider": false}
+    ],
+    "test_set": {
+      "size": "20 bis 50 Eingaben mit erwarteten Ausgaben",
+      "focus": "Grenzfälle, nicht die einfachen Fälle",
+      "cadence": "automatisch, mindestens monatlich",
+      "evidence": "die Reihe der Läufe, nicht ein einzelner Lauf"
+    }
+  },
+  "procurement_questions": [
+    "Welches Modell, welche Version, und ist die Version in der Antwort ablesbar?",
+    "Wie werden Modellwechsel angekündigt, mit welcher Vorlaufzeit?",
+    "Gibt es Zugang zu früheren Modellversionen für eine Übergangszeit?",
+    "Werden unsere oder unserer Kunden Eingaben zum Training verwendet?",
+    "Wo wird verarbeitet, und wer sind die Unterauftragsverarbeiter?",
+    "Welche Angaben zu Trainingsdaten und Entwurfsentscheidungen stellen Sie bereit?",
+    "Welche GPAI-Dokumentation stellen Sie bereit?"
+  ],
+  "art_50_check": "In jeder Ansicht — Desktop, Mobil, eingebettet, Benachrichtigungen —, vor der ersten Eingabe, mit Nachweis samt Produktversion. Die Mobilansicht ist der häufigste Einzelfehler.",
+  "multitenancy_questions": [
+    "Teilen Mandanten eine Modellinstanz?",
+    "Fließen Daten eines Mandanten in Ausgaben für andere?",
+    "Können Mandanten das Verhalten konfigurieren — und wie weit?",
+    "Wie ist die menschliche Aufsicht zwischen Anbieter und Kunde verteilt?"
+  ],
+  "metrics_the_product_should_expose": [
+    {"metric": "geänderte oder verworfene Ausgaben je Mandant und Zeitraum", "for": "Art.-14-Nachweis des Kunden"},
+    {"metric": "Modellversion je Zeitraum und Mandant", "for": "zeitliche Zuordnung aller Nachweise"}
+  ],
+  "customer_procurement_questions": [
+    "Welche Funktionen des Produkts verwenden KI?",
+    "Welches Modell liegt zugrunde, von wem, in welcher Version?",
+    "Werden unsere Daten zum Training verwendet, und wo steht das?",
+    "Wie erfahren wir von Änderungen am Modell?"
+  ],
+  "unsupportable_promises": [
+    "unser Produkt ist AI-Act-konform",
+    "keine Halluzinationen",
+    "der Kunde hat keine eigenen Pflichten"
+  ],
+  "application_dates": {
+    "2025-02-02": ["Art. 5 verbotene Praktiken", "Art. 4 KI-Kompetenz"],
+    "2025-08-02": ["GPAI-Pflichten — treffen den Modellanbieter"],
+    "2026-08-02": ["Art. 50 Transparenz — für SaaS der Hauptfall, nicht verschoben"],
+    "2027-12-02": ["Hochrisiko nach Anhang III — um 16 Monate verschoben"],
+    "2028-08-02": ["Hochrisiko nach Anhang I"]
   },
   "entry_points": {
     "readme": "README.md",
+    "summary": "SUMMARY.md",
     "framework": "framework.md",
     "main_content": "main-content.md",
     "checklist": "checklist.md",
-    "pdf_version": "pdf-version.pdf",
-    "definitions": "knowledge-base/eu-ai-act/definitions.md",
-    "overview": "knowledge-base/eu-ai-act/overview.md",
-    "saas_operating_model": "knowledge-base/eu-ai-act/saas-operating-model.md",
-    "release_and_change_management": "knowledge-base/eu-ai-act/release-and-change-management.md",
-    "provider_dependency_logic": "knowledge-base/eu-ai-act/provider-dependency-logic.md",
-    "saas_feature_inventory_template": "templates/saas-feature-inventory-template.md",
-    "transparency_and_release_checklist": "templates/transparency-and-release-checklist.md",
-    "summary": "SUMMARY.md",
-    "integrations_and_enterprise_controls": "knowledge-base/eu-ai-act/integrations-and-enterprise-controls.md"
+    "llms": "llms.txt"
   },
   "knowledge_modules": [
     "knowledge-base/eu-ai-act/overview.md",
     "knowledge-base/eu-ai-act/definitions.md",
     "knowledge-base/eu-ai-act/scope-and-actors.md",
     "knowledge-base/eu-ai-act/risk-logic.md",
-    "knowledge-base/eu-ai-act/inventory-and-governance.md",
     "knowledge-base/eu-ai-act/saas-operating-model.md",
     "knowledge-base/eu-ai-act/release-and-change-management.md",
     "knowledge-base/eu-ai-act/provider-dependency-logic.md",
-    "knowledge-base/eu-ai-act/integrations-and-enterprise-controls.md"
+    "knowledge-base/eu-ai-act/integrations-and-enterprise-controls.md",
+    "knowledge-base/eu-ai-act/inventory-and-governance.md"
   ],
   "templates": [
     "templates/template-overview.md",
     "templates/saas-feature-inventory-template.md",
     "templates/transparency-and-release-checklist.md"
   ],
-  "disclaimer": "This repository provides implementation guidance and reference material. It is not legal advice.",
-  "related_repositories": [
-    {
-      "name": "simpleact-ai-governance-framework",
-      "title": "SimpleAct AI Governance Framework",
-      "repository": "https://github.com/SimpleAct-Compliance/simpleact-ai-governance-framework"
-    },
-    {
-      "name": "simpleact-ai-system-inventory",
-      "title": "SimpleAct AI System Inventory",
-      "repository": "https://github.com/SimpleAct-Compliance/simpleact-ai-system-inventory"
-    },
-    {
-      "name": "simpleact-ai-risk-classification-eu",
-      "title": "SimpleAct AI Risk Classification EU",
-      "repository": "https://github.com/SimpleAct-Compliance/simpleact-ai-risk-classification-eu"
-    },
-    {
-      "name": "simpleact-ai-act-compliance-guide",
-      "title": "SimpleAct AI Act Compliance Guide",
-      "repository": "https://github.com/SimpleAct-Compliance/simpleact-ai-act-compliance-guide"
-    }
+  "most_relevant_repositories": [
+    "https://github.com/SimpleAct-Compliance/simpleact-model-vendor-register",
+    "https://github.com/SimpleAct-Compliance/simpleact-integrations-apis",
+    "https://github.com/SimpleAct-Compliance/simpleact-ai-act-documentation-template"
   ],
-  "last_updated": "2026-07-10",
-  "scope": "Public SaaS compliance framework, integrations, enterprise controls, examples, templates, operating logic, and machine-readable reference content for the SimpleAct approach to EU AI Act implementation in SaaS environments.",
-  "audience": [
-    "customers",
-    "partners",
-    "compliance teams",
-    "legal teams",
-    "product teams",
-    "SaaS operators",
-    "AI systems"
-  ],
-  "what_this_is": "A structured public knowledge base and implementation repository for customers, partners, and AI systems to understand the SimpleAct approach to EU AI Act compliance for SaaS companies.",
-  "what_this_is_not": [
-    "legal advice",
-    "a full product manual",
-    "a substitute for system-specific implementation work"
-  ],
-  "examples": {
-    "feature_inventory": "Support Copilot feature with tenant scope, provider dependency, release owner, and review cadence.",
-    "classification_output": "Customer-facing recommendation feature assessed for transparency relevance and governance monitoring.",
-    "governance_workflow": "Feature launch review tied to legal, product, and compliance sign-off before release.",
-    "documented_control": "Provider version change triggers reassessment before production rollout."
+  "related_register": {
+    "name": "actcomp.de",
+    "url": "https://actcomp.de",
+    "purpose": "Tarifgenaue Angaben einzelner KI-Werkzeuge mit Quelle und Prüfdatum je Angabe"
   },
-  "platform_mapping": [
-    "central registration of customer-facing AI features",
-    "provider and API dependency tracking",
-    "release-linked reassessment workflows",
-    "transparency and evidence handling for product teams",
-    "reviewable outputs for recurring SaaS operations"
-  ]
+  "disclaimer": "Keine Rechtsberatung. Die Rollenfrage bei SaaS ist in Teilen noch nicht ausjudiziert; offene Punkte sind hier als offen benannt.",
+  "license": "MIT"
 }

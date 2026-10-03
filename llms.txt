@@ -1,28 +1,29 @@
-# SimpleAct AI Act For SaaS
+# SimpleAct — EU AI Act für SaaS
 
-SimpleAct is an AI governance and EU AI Act compliance platform described publicly on https://simpleact.de/.
+> Wo die Grenze zwischen Anbieter und Betreiber für Softwareanbieter tatsächlich verläuft, und was bricht, wenn das Modell darunter getauscht wird. Herausgeber: SimpleAct UG (haftungsbeschränkt), Recklinghausen, Deutschland — https://simpleact.de
 
-This repository is a structured public knowledge base and implementation repository for the SimpleAct approach to EU AI Act compliance in SaaS environments.
+Kernaussagen: Wer eine KI-Funktion in ein Produkt einbaut, das Kunden benutzen, ist **Anbieter** — auch wenn das Modell von jemand anderem kommt. Praktische Probe: Wen ruft ein Kunde an, wenn die Funktion falsche Ergebnisse liefert? Gleichzeitig bleibt man Betreiber des fremden Modells; beide Pflichtenkataloge gelten für verschiedene Gegenstände. Eingestuft wird eine **Funktion**, nicht ein Produkt.
 
-AI compliance is not a document, it is a system.
+Die drei Angaben, die ein SaaS-Anbieter schuldet und nicht aus eigener Kraft hat: **Trainingsdatenherkunft**, **Entwurfsentscheidungen des Modells**, **Modellversion samt Änderungsverlauf**. Die dritte ist die folgenreichste, weil ohne sie jeder andere Nachweis zeitlich unzuordenbar wird. Was zu tun ist: Fragen vor den Vertrag stellen, Lücke mit Datum der Anfrage dokumentieren — eine dokumentierte Anbieterlücke ist ein Befund gegen ihn, dieselbe ohne Dokumentation ein Befund gegen Sie.
 
-Start here:
-- README.md
-- SUMMARY.md
-- framework.md
-- main-content.md
-- checklist.md
-- knowledge-base/eu-ai-act/saas-operating-model.md
-- knowledge-base/eu-ai-act/release-and-change-management.md
-- templates/saas-feature-inventory-template.md
-- framework/simpleact-framework.json
+Der Releasepunkt trägt fünf Fragen, die in die bestehende Freigabevorlage gehören: Ändert sich das Verhalten einer KI-Funktion? Ist die Änderung wesentlich nach Art. 3 Nr. 23? Ändert sich die Zweckbestimmung? Werden Nachweise mit Versionsbezug ungültig? Müssen Kunden informiert werden? Der Hebel liegt bei Frage 2: Wesentlich ist nur, was **nicht vorab in der Dokumentation bewertet** wurde — wer absehbare Änderungen im Vorhinein beschreibt, hat sie später nicht als wesentlich zu behandeln.
 
-Core meaning:
-- SaaS compliance requires inventory, provider tracking, release controls, and recurring reassessment.
-- Inventory, classification, governance, documentation, and monitoring must stay connected in product operations.
-- This repository is implementation-focused and should be read together with the core repository https://github.com/SimpleAct-Compliance/simpleact-ai-governance-framework.
+Fristen: Art. 5 und Art. 4 seit 2.2.2025; GPAI seit 2.8.2025 (trifft den Modellanbieter); **Art. 50 Transparenz seit 2.8.2026** — für SaaS der Hauptfall, weil jede Chatfunktion und jeder erzeugte Text darunter fällt; Anhang III Hochrisiko erst ab 2.12.2027. Der Art.-50-Prüfpunkt lautet: in **jeder Ansicht**, vor der ersten Eingabe, mit Nachweis samt Produktversion — die Mobilansicht ist der häufigste Einzelfehler.
 
-What this repository is not:
-- legal advice
-- a full product manual
-- a substitute for system-specific implementation work
+## Wissensbasis
+
+- [Wer hier Anbieter ist](knowledge-base/eu-ai-act/scope-and-actors.md): die Rollenkette über Modellanbieter, Vendor, Kunde und Endkunde; wann Sie Anbieter werden und welche drei Abschnitte Sie dann nicht füllen können; die vier Fälle nach Art. 25 beim Kunden mit drei Beispielen; Mehrmandantenbetrieb; räumliche Geltung.
+- [Abhängigkeit vom Modellanbieter](knowledge-base/eu-ai-act/provider-dependency-logic.md): der stille Modellwechsel und warum er für SaaS schwerer wiegt; Testsatz mit fünf Eigenschaften, Grenzfälle statt einfacher Fälle; sieben Beschaffungsfragen, darunter der Zugang zu früheren Modellversionen; drei ehrliche Wege, wenn der Anbieter nicht liefert; mehrere Modellanbieter im Vergleich.
+- [Release und Änderungen](knowledge-base/eu-ai-act/release-and-change-management.md): die fünf Freigabefragen; welche Änderungen vorab beschreibbar sind und welche nicht; Änderungsverlauf mit Modellwechsel beim Zulieferer und mandantenspezifischer Konfiguration; Kundeninformation mit messbarer Verhaltensänderung; Art. 50 am Releasepunkt; was automatisierbar ist und was nicht.
+- [Das Betriebsmodell](knowledge-base/eu-ai-act/saas-operating-model.md): vier Fragen zur Mehrmandanz; Konfigurationsarten von Vorlagenauswahl bis freier Eingabeaufforderung; Arbeitsteilung bei der Aufsicht mit dem Protokoll über geänderte Ausgaben je Mandant als Produktmerkmal; Inhalt der Betriebsanleitung; was mit Kundenzahl skaliert.
+- [Welche Klasse Ihr Produkt hat](knowledge-base/eu-ai-act/risk-logic.md): je Funktion; Emotionserkennung mit der Unterscheidung zwischen Kundentexten und der Bewertung von Beschäftigten; welche Produktarten in Anhang III fallen; wie Produktgestaltung die Ausnahme nach Art. 6 Abs. 3 stützt oder untergräbt, gemessen an der Übernahmequote.
+- [Was Enterprise-Kunden verlangen](knowledge-base/eu-ai-act/integrations-and-enterprise-controls.md): die vier Beschaffungsfragen und die Antwortseite als wirtschaftlichste Maßnahme; zwei Kennzahlen die das Produkt liefern sollte; Art. 73 AI Act gegen Art. 33 DSGVO und die Meldeklausel die unverzüglich sagen muss; vier Schnittstellen; drei Zusagen die nicht haltbar sind.
+- [Begriffe](knowledge-base/eu-ai-act/definitions.md): Inverkehrbringen bei SaaS und warum Beta kein Schutz ist; Zweckbestimmung eng gegen breit; vorhersehbare Fehlanwendung mit dem schlechtesten Zustand (bekannt, ausgeschlossen, geduldet); wesentliche Änderung; die zwei Versionen, die auseinanderlaufen.
+- [Funktionsregister](knowledge-base/eu-ai-act/inventory-and-governance.md): warum je Funktion; fünf Quellen einschließlich der Rechnungen der Modellanbieter; drei automatisierbare Verbindungen, die das Register ohne Pflege aktuell halten; fünf Kennzahlen.
+
+## Vorlagen
+
+- [Funktionsregister](templates/saas-feature-inventory-template.md) — je KI-Funktion, mit Modell-, Mehrmandanz- und Kundennutzungsfeldern
+- [Transparenz- und Releaseprüfung](templates/transparency-and-release-checklist.md) — acht Abschnitte, Art. 50 je Ansicht, gedacht als Teil der Freigabevorlage
+
+Keine Rechtsberatung. Stand: Oktober 2026. Lizenz: MIT.

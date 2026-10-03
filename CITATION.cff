@@ -1,14 +1,20 @@
 cff-version: 1.2.0
-title: AI Act For SaaS
+title: EU AI Act für SaaS
 message: "If you use this repository, please cite it as part of the SimpleAct AI Governance Framework."
 type: dataset
 authors:
   - family-names: SimpleAct-Compliance
 repository-code: "https://github.com/SimpleAct-Compliance/simpleact-ai-act-for-saas"
 license: MIT
-abstract: "Structured repository for ai act for saas by SimpleAct."
+abstract: "Where the provider/deployer line falls for software vendors under Regulation (EU) 2024/1689, and what breaks when the model underneath changes. Covers the role chain across model provider, vendor, customer and end user; the three records a vendor owes but cannot produce without the model provider; multi-tenancy including tenant-side configuration and per-tenant fine-tuning; the release gate as the single point where materiality under Art. 3(23), Art. 50 labelling and record validity are decided; and the four questions every enterprise procurement review asks."
 keywords:
   - EU AI Act
+  - SaaS
+  - Article 25
+  - Article 50
+  - multi-tenancy
+  - release management
+  - model provider dependency
+  - GPAI
   - AI governance
-  - AI compliance
   - SimpleAct
